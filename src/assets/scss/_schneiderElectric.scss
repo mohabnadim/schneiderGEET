@@ -59,6 +59,9 @@
         .text-card{
             font-size: 0.8rem;
         }
+        .stat{
+            padding: 0.5rem !important;
+        }
         /* Custom remove Padding class */
         
         .nopadding{
@@ -240,14 +243,14 @@
 
             #wrapper.menuDisplayed-table #sidebar-wrapper-table {
                 
-                    width:35%;
+                    width:25%;
                     right: -15px;
 
             }
 
             #wrapper.menuDisplayed-table  #page-content-wrapper {
 
-                padding-right:35%;
+                padding-right:25%;
 
             }
 
