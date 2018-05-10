@@ -47,14 +47,14 @@ $(document).ready(function() {
   $("body").tooltip({ selector: '[data-toggle=tooltip]' });
 });
 
-//switching navbar to fixed on scroll
-$(window).scroll(function() {
-  if( $(this).scrollTop() > 0 ) {
-   $(".navbar").addClass("fixed-top");
- } else {
-   $(".navbar").removeClass("fixed-top");
- }
-});
+// //switching navbar to fixed on scroll
+// $(window).scroll(function() {
+//   if( $(this).scrollTop() > 0 ) {
+//    $(".navbar").addClass("fixed-top");
+//  } else {
+//    $(".navbar").removeClass("fixed-top");
+//  }
+// });
 
 //sidebar right Table on click
 $(document).ready(function() {
