@@ -59,7 +59,7 @@
             padding: 0 !important;
         }
 
-            
+        
         /* Tooltip Styling */
         
         .tooltip-inner {
@@ -99,8 +99,10 @@
 
             font-family: $font-custom;
             text-align:center;  
-            margin-bottom: 6.5rem !important;  
         }
+        .table-sm th, .table-sm td {
+            padding: 0.1rem !important;
+        } 
         .thead-primary{
             background-color: $accent;
             color: white;
@@ -296,7 +298,7 @@
             float: none;
             opacity: .5;
             z-index: 100;
-            margin-right: 35%;
+            margin-right: 1rem;
         }
 
         .burger_box a.menu-icon:hover,
