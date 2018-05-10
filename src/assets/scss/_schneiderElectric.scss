@@ -1,0 +1,492 @@
+        /* Core Variables Styling & Fonts */
+        
+        @font-face {
+
+            font-family: "gdsherpa";
+            src: url("https://img1.wsimg.com/ux/fonts/sherpa/1.0/gdsherpa-bold.woff2") format("woff2"), url("https://img1.wsimg.com/ux/fonts/sherpa/1.0/gdsherpa-bold.woff") format("woff");
+
+        }
+
+        $pe-7s-font-path: "assets/fonts/";
+        $base-theme:Bootstrap;
+        $skin-name:schneider_electric;
+        $accent: #009530;
+        $secondary: #d0d0d0;
+        $info: #42b4e6;
+        $success: #4fa600;
+        $warning: #ffd100;
+        $error: #b10043;
+        $body-bg: #ffffff;
+        $body-color: #292b2c;
+        $component-bg: #ffffff;
+        $component-color: #292b2c;
+        $card-cap-bg: #f7f7f9;
+        $card-cap-color: #292b2c;
+        $series-a: #003d72;
+        $series-b: #007193;
+        $series-c: #008a00;
+        $series-d: #d57e02;
+        $series-e: #b23a00;
+        $series-f: #8f0400;
+        $font-weight-light: 200;
+        $font-weight-normal: 300;
+        $font-weight-bold: 400;
+        // $font-family-sans-serif: gdsherpa,Helvetica,Arial,sans-serif;
+        // $font-custom:Quicksand,Georgia,'Times New Roman',Times,serif;
+        $font-family-sans-serif: Open Sans;
+        $font-custom:$font-family-sans-serif;
+
+
+        /* Core Typography Styling */
+        
+        a, h1, h2, h3, h4, h5, h6,
+        .a, .h1, .h2, .h3, .h4, .h5, .h6 {
+            line-height:2.2807rem;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        }
+
+        body, p {
+            line-height: 1.61803;
+        }
+
+        .text-card{
+            font-size: 0.8rem;
+        }
+        /* Custom remove Padding class */
+        
+        .nopadding{
+            padding: 0 !important;
+        }
+
+            
+        /* Tooltip Styling */
+        
+        .tooltip-inner {
+        
+            color: $accent !important;
+            border:1px solid $accent;
+            background-color:#ffffff !important ;
+            
+        }
+
+        .tooltip.bs-tooltip-auto[x-placement^=top] .arrow::before, .tooltip.bs-tooltip-top .arrow::before { 
+
+            border-top-color: $accent;
+
+        }
+        
+        /* icons Styling */
+        
+        .icon {
+
+            vertical-align: sub;
+            font-size:0.5rem;
+
+        }
+
+        /* Card icons Styling */
+
+        .icon-card {
+
+            font-size: 4rem;
+            
+        }
+
+        /* table styling */
+
+        .table {
+
+            font-family: $font-custom;
+            text-align:center;  
+            margin-bottom: 6.5rem !important;  
+        }
+        .thead-primary{
+            background-color: $accent;
+            color: white;
+        }
+        /* Custom Secondary Font */
+        
+        .Cfont-secondary{
+            font-family: $font-custom;
+        }        
+        
+        /* Progress styling */
+
+        .progress{
+            height: 2rem !important;
+        }
+
+        
+        /* Main Content Container Styling */
+        
+        #page-content-wrapper {
+
+            transition:all .5s;
+        }
+        
+     
+        
+        /* Change the width of the sidebar to display it*/
+            #menu-toggle {
+
+                transition:all .3s;
+                font-size:2em;
+            }
+
+            #sidebar-wrapper {
+
+                -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+                box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+                z-index:1;
+                position: fixed;
+                width:0;
+                height: 92% !important;
+                overflow-y: scroll;
+                background:#f9f9f9;
+                opacity:0.9;
+                transition:all .5s;
+                display:block;
+                align-items:center;
+                top: 7.2%;
+                left:0px;
+
+            }
+
+           
+                   
+          
+        #wrapper.menuDisplayed #sidebar-wrapper {
+
+                    width:15%;
+    
+       }
+                
+                
+                
+                
+             
+            .sidebar {
+
+                padding:0;
+                list-style:none; 
+                transition:all .5s;
+                width:100%;
+                text-align:left;
+
+            }
+            
+            
+            .sidebar-nav li a {
+
+                display:block;
+                text-decoration:none;
+                color:#ddd;
+
+            }
+            
+            .sidebar-nav li:hover {
+
+                background:#f9f9f9;
+
+            }
+
+            .sidenav li {
+
+                list-style: none;
+                line-height:40px;  
+                width:100%;
+                transition:all .3s;
+
+            }
+
+        /* Change the width of the table right sidebar to display it*/
+
+            #sidebar-wrapper-table {
+
+                -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+                box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+                z-index:1;
+                width:0;
+                position: fixed;
+                height:100vh;
+                overflow-y:scroll;
+                background:#f9f9f9;
+                opacity:0.9;
+                transition:all .5s;
+                display:block;
+                align-items:center;
+                right: 0px;
+                top: 7.2%
+                
+            }
+
+            #menu-toggle-table {
+
+                transition:all .3s;
+
+            }
+
+            #wrapper.menuDisplayed-table #sidebar-wrapper-table {
+                
+                    width:35%;
+                    right: 0px;
+
+            }
+
+            #wrapper.menuDisplayed-table  #page-content-wrapper {
+
+                padding-right:35%;
+
+            }
+
+        /* table right sidebar icon Styling */
+
+            #table-icon{
+
+                transition:all .5s;
+                position: fixed;
+                margin-top: 30%;
+                z-index: 1;
+                right: 0px;
+                
+            }
+
+            #table-icon.menuDisplayed {
+
+              display: none;
+
+            }
+
+            .vertical-card {
+
+                transform: rotate(270deg);
+                left:39%;
+                right:0px;
+
+            }
+
+            .vertical-text {
+
+                    margin-top: 0.4rem;
+                    margin-bottom: 0.2rem;        
+                    padding: 5% !important;        
+                    margin-left: 1rem;        
+                    margin-right: 1rem;
+
+            }
+
+            .table-icon-span {
+
+                    padding-left: 15px;
+
+            }
+
+
+
+        /* Burger Box Menu Icon Animations & Styling */
+
+        .burger_box {
+            display: block;
+            float: left;
+        }
+
+        .burger_box a.menu-icon {
+            display: inline-block;
+            float: none;
+            opacity: .5;
+            z-index: 100;
+            margin-right: 35%;
+        }
+
+        .burger_box a.menu-icon:hover,
+        .burger_box a.menu-icon.opened {
+            opacity: 1;
+        }
+
+        .burger_box a.menu-icon.opened {
+        
+            background: rgba(0,20,60,0);
+        }
+
+        .burger_box .menu-icon_box {
+            display: inline-block;
+            height: 25px;
+            position: relative;
+            text-align: left;
+            width: 25px;
+        }
+
+        .burger_box .menu-icon_line {
+            background: #fff;
+            border-radius: 2px;
+            display: inline-block;
+            height: 3px;
+            position: absolute;
+            width: 100%;
+        }
+
+        .burger_box .menu-icon_line--1 {
+            top: 2px;
+        }
+
+        .burger_box .menu-icon_line--2 {
+            top: 10px;
+        }
+
+        .burger_box .menu-icon_line--3 {
+            top: 18px;
+        }
+
+        .burger_box .menu-icon_line--1 {
+            transition: top 200ms 250ms, transform 200ms;
+            -webkit-transition: top 200ms 250ms, -webkit-transform 200ms;
+        }
+
+        .burger_box .menu-icon_line--2 {
+            transition: opacity 0ms 300ms;
+            -webkit-transition: opacity 0ms 300ms;
+        }
+
+        .burger_box .menu-icon_line--3 {
+            transition: top 100ms 300ms, transform 200ms;
+            -webkit-transition: top 100ms 300ms, -webkit-transform 200ms;
+        }
+
+        .burger_box .menu-icon.opened .menu-icon_box {
+            transform: scale3d(0.9, 0.9, 0.9);
+            -webkit-transform: scale3d(0.9, 0.9, 0.9);
+        }
+
+        .burger_box .menu-icon.opened .menu-icon_line {
+            top: 10px;
+        }
+
+        .burger_box .menu-icon.opened .menu-icon_line--1 {
+            background: #fff;
+            border-radius: 11px;
+            display: inline-block;
+            height: 5px;
+            position: absolute;
+            width: 130%;
+            transform: rotate3d(0, 0, 1, 45deg);
+            -webkit-transform: rotate3d(0, 0, 1, 45deg);
+            transition: top 100ms, transform 200ms 250ms;
+            -webkit-transition: top 100ms, -webkit-transform 200ms 250ms;
+        }
+
+        .burger_box .menu-icon.opened .menu-icon_line--2 {
+            background: #fff;
+            border-radius: 11px;
+            display: inline-block;
+            height: 5px;
+            position: absolute;
+            width: 130%;
+            opacity: 0;
+            transition: opacity 200ms;
+            -webkit-transition: opacity 200ms;
+        }
+
+        .burger_box .menu-icon.opened .menu-icon_line--3 {
+            background: #fff;
+            border-radius: 11px;
+            display: inline-block;
+            height: 5px;
+            position: absolute;
+            width: 130%;
+            transform: rotate3d(0, 0, 1, -45deg);
+            -webkit-transform: rotate3d(0, 0, 1, -45deg);
+            transition: top 200ms, transform 200ms 250ms;
+            -webkit-transition: top 200ms, -webkit-transform 200ms 250ms;
+        }
+          //Media Queiries for Smaller Screens
+        @media only screen and (max-width: 1366px) { 
+            #wrapper.menuDisplayed-table #sidebar-wrapper-table {
+               
+                top: 9%;
+                
+    
+        }
+        #wrapper.menuDisplayed #sidebar-wrapper {
+            top: 9%;
+            width: 20%;
+        }
+        }          
+             
+        @media only screen and (max-width: 1280px) { 
+                    .progress-text{
+                        display: none;
+                    }
+                    
+            #wrapper.menuDisplayed-table #sidebar-wrapper-table {
+               
+                top: 9.5%
+                
+    
+        }
+        #wrapper.menuDisplayed #sidebar-wrapper {
+            top: 9.5%;
+            width: 20%;
+            
+            
+        }
+       
+        }
+        @media only screen and (max-width: 1024px) { 
+                    
+            
+            #wrapper.menuDisplayed #sidebar-wrapper {
+                top: 8.8%;
+                width: 25%;
+
+                
+            }
+        
+         
+            #wrapper.menuDisplayed-table #sidebar-wrapper-table {
+               
+                top: 8.8%;
+
+        }
+
+        
+    
+           
+           
+           
+            
+        }          
+        @media only screen and (max-width: 960px) { 
+            #wrapper.menuDisplayed #sidebar-wrapper {
+                top: 11.3%;
+            }
+            #wrapper.menuDisplayed-table #sidebar-wrapper-table {
+                top: 11.3%;
+            }
+        }
+        @media only screen  and (max-width: 736px) {
+            #wrapper.menuDisplayed-table #sidebar-wrapper-table {
+                    width:70%;
+                    top: 7.9%;
+                
+            
+            }
+            #wrapper.menuDisplayed #sidebar-wrapper {
+                width:60%;
+                top: 7.9%;            }
+          
+            #table-icon {
+
+        
+                margin-top: 50%;
+            }
+            
+           
+            #wrapper.menuDisplayed-table  #page-content-wrapper {
+
+                padding-right:0;
+
+            }
+        }
+       
+      

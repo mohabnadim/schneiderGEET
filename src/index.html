@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>GEET</title>
+  <base href="/">
+
+<!--Stroke 7 Stylesheets & Scripts-->
+
+  <link rel="stylesheet" href="path/to/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+  <script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+  <link rel="stylesheet" href="path/to/pe-icon-7-stroke/css/helper.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root>
+</body>
+
+	<script>
+		//SVG Icons for Feather
+		feather.replace({ class: 'foo bar', 'stroke-width': 2 })
+	</script>
+	<script type="text/javascript">
+    $(function () {
+        $("[rel='tooltip']").tooltip();
+    });
+</script>
+	<script>
+		// Toggling Tooltip
+				$(function () {
+				$('[data-toggle="tooltip"]').tooltip()
+				})
+	</script>
+
+
+</html>
